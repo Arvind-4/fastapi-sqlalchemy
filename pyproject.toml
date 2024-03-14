@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "fastapi-sqlalchemy"
+version = "0.1.0"
+description = "FastAPI backend with turso db and SQLalchemy"
+authors = ["Arvind <pingarvindforquestions@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = {extras = ["all"], version = "^0.110.0"}
+uvicorn = "^0.28.0"
+sqlalchemy-libsql = "^0.1.0"
+pydantic = ">=2.6,<3"
+pydantic-settings = "^2.2.1"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
